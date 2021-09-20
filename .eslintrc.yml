@@ -1,0 +1,37 @@
+env:
+  es6: true
+  node: true
+
+extends:
+  - 'standard'
+  - 'eslint:recommended'
+  - 'plugin:@typescript-eslint/eslint-recommended'
+  - 'plugin:@typescript-eslint/recommended'
+  - 'plugin:@typescript-eslint/recommended-requiring-type-checking'
+  - 'plugin:compat/recommended'
+
+plugins:
+  - '@typescript-eslint'
+
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaVersion: 2020
+  sourceType: module
+  project: ['./tsconfig.eslint.json']
+
+rules:
+  '@typescript-eslint/member-delimiter-style': [error, { multiline: { delimiter: none } }]
+  '@typescript-eslint/explicit-function-return-type': off
+  '@typescript-eslint/no-non-null-assertion': off
+  '@typescript-eslint/camelcase': off
+  '@typescript-eslint/unbound-method': off
+
+  operator-linebreak: [error, before]
+  comma-dangle: [error, always-multiline]
+  key-spacing: [error, {align: value}]
+  space-before-function-paren: 0
+  no-useless-constructor: 0
+  no-void: [error, {allowAsStatement: true}]
+  indent:
+    - error
+    - 2
