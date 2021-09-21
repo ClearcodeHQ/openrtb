@@ -1,9 +1,11 @@
 .idea
+.github
 src
 test
 coverage
 
 .gitignore
+.eslintrc.yml
 jest.config.json
 tsconfig.json
-tsconfig.test.json
+tsconfig.eslint.json

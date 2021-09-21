@@ -19,6 +19,9 @@ parserOptions:
   sourceType: module
   project: ['./tsconfig.eslint.json']
 
+ignorePatterns:
+  - lib
+
 rules:
   '@typescript-eslint/member-delimiter-style': [error, { multiline: { delimiter: none } }]
   '@typescript-eslint/explicit-function-return-type': off
