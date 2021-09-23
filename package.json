@@ -3,7 +3,7 @@
   "description": "Library with OpenRTB spec types which allows to build and validate OpenRTB objects",
   "version": "0.0.1",
   "author": "Clearcode PHP-02 <php02@clearcode.cc> (https://clearcode.cc)",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ClearcodeHQ/openrtb.git"
@@ -21,9 +21,8 @@
   },
   "homepage": "https://github.com/ClearcodeHQ/openrtb",
   "scripts": {
-    "build": "rimraf lib && tsc",
     "lint": "eslint \"{src,test}/*.ts\"",
-    "ci": "yarn lint && yarn build"
+    "ci": "yarn lint"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.31.1",
@@ -34,7 +33,6 @@
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "rimraf": "^3.0.2",
     "typescript": "^4.4.3"
   }
 }
