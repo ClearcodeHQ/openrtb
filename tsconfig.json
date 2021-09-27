@@ -5,9 +5,6 @@
     "outDir": "lib",
     "baseUrl": "./",
     "declaration": true,
-    "declarationMap": true,
-    "inlineSources": true,
-    "sourceMap": true,
     "strict": true,
     "alwaysStrict": true,
     "noUnusedLocals": true,
@@ -17,7 +14,8 @@
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "emitDeclarationOnly": true
   },
-  "exclude": ["node_modules", "test", "lib"]
+  "exclude": ["node_modules", "lib"]
 }
