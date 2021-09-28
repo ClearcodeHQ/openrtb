@@ -1,8 +1,8 @@
 {
-  "name": "openrtb",
+  "name": "@clearcodehq/openrtb",
   "description": "Library with OpenRTB spec types which allows to build and validate OpenRTB objects",
-  "version": "0.0.1",
-  "author": "Clearcode PHP-02 <php02@clearcode.cc> (https://clearcode.cc)",
+  "version": "1.0.0",
+  "author": "Clearcode (https://clearcode.cc)",
   "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
