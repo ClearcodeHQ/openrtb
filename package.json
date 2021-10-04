@@ -1,8 +1,9 @@
 {
   "name": "@clearcodehq/openrtb",
   "description": "Library with OpenRTB spec types which allows to build and validate OpenRTB objects",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Clearcode (https://clearcode.cc)",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
@@ -21,7 +22,8 @@
   },
   "homepage": "https://github.com/ClearcodeHQ/openrtb",
   "scripts": {
-    "build": "rimraf lib && tsc",
+    "prebuild": "rimraf lib",
+    "build": "tsc",
     "lint": "eslint src",
     "ci": "yarn lint && yarn build"
   },
