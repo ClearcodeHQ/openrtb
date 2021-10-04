@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/ClearcodeHQ/openrtb",
   "scripts": {
-    "build": "rimraf lib && tsc",
+    "prebuild": "rimraf lib",
+    "build": "tsc",
     "lint": "eslint src",
     "ci": "yarn lint && yarn build"
   },

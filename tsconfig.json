@@ -14,8 +14,7 @@
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "emitDeclarationOnly": true
+    "esModuleInterop": true
   },
   "exclude": ["node_modules", "lib"]
 }
