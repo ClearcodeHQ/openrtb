@@ -60,6 +60,6 @@ export interface Video extends Extensible {
   delivery?: ContentDeliveryMethod[]
   pos?: AdPosition
   companionad?: Banner[]
-  api?: APIFramework
+  api?: APIFramework[]
   companiontype?: CompanionType[]
 }
